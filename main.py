@@ -25,9 +25,9 @@ def PB1():
     test_get_largest_prime_below()
     n = int(input("Introduceti valoarea numarului: "))
     rez = get_largest_prime_below(n)
-    print(f"Rezultatul functiei [numele functiei] pentru valoarea {n} este {rez}")
+    print(f"Rezultatul functiei [get_largest_prime_below()] pentru valoarea {n} este {rez}")
 
-#PB1()
+PB1()
 def cmmdc(x, y):
    r = x % y
    while y != 0:
@@ -52,10 +52,10 @@ def test_get_cmmmc():
     assert get_cmmmc([2, 4, 8]) == 8
     assert get_cmmmc([2, 3, 5 * 2]) == 30
     assert get_cmmmc([1, -1, 2, 3]) == 6
-def PB2():
+def PB14():
     test_get_cmmmc()
     n = int(input("Introduceti numarul de numere aici: "))
     sir_numere = input("Dati numere separate prin spatiu aici: ")
     numere_str = sir_numere.split(' ')
     print(f'Cel mai mic multiplu comun al celor {n} numere este {get_cmmmc(numere_str)}')
-#PB2()
+PB14()
