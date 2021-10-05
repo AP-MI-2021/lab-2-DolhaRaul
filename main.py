@@ -8,6 +8,7 @@ def prim(n):
           return False
         i = i + 2
     return True
+
 def get_largest_prime_below(n):
     if n < 2: return "Nu exista"
     rez = n
@@ -27,7 +28,6 @@ def PB1():
     rez = get_largest_prime_below(n)
     print(f"Rezultatul functiei [get_largest_prime_below()] pentru valoarea {n} este {rez}")
 
-PB1()
 def cmmdc(x, y):
    r = x % y
    while y != 0:
@@ -58,4 +58,11 @@ def PB14():
     sir_numere = input("Dati numere separate prin spatiu aici: ")
     numere_str = sir_numere.split(' ')
     print(f'Cel mai mic multiplu comun al celor {n} numere este {get_cmmmc(numere_str)}')
-PB14()
+
+def main():
+    optiune = int(input("Introduceti problema dorita aici: "))
+    if optiune == 1:#Problema aleasa din prima jumatate
+        PB1()
+    elif optiune == 2:#Problema aleasa din a doua jumatate
+        PB14()
+main()
