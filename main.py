@@ -60,9 +60,14 @@ def PB14():
     print(f'Cel mai mic multiplu comun al celor {n} numere este {get_cmmmc(numere_str)}')
 
 def main():
-    optiune = int(input("Introduceti problema dorita aici: "))
-    if optiune == 1:#Problema aleasa din prima jumatate
-        PB1()
-    elif optiune == 2:#Problema aleasa din a doua jumatate
-        PB14()
+    while True:
+        optiune = int(input("Introduceti problema dorita aici: "))
+        if optiune == 1:#Problema aleasa din prima jumatate
+            PB1()
+        elif optiune == 2:#Problema aleasa din a doua jumatate
+            PB14()
+        elif optiune == 3:#Ne orpim
+            break
+        else:
+            print("Optiune invalida")
 main()
